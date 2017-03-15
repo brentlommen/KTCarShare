@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>KT Car Share</title>
+</head>
+
+<style>
+
+
+    body{
+    }
+    .body{
+    position: absolute;
+	top: 20px;
+	left: 150px;
+	height: 50px;
+	width: 1000px;
+	padding: 10px;
+
+    }
+    .head h1{
+        position: relative;
+        padding-left: 150px;
+        top: 10px;
+    }
+
+    .date{
+        position: absolute;
+        top: 520px;
+        left: 500px;
+
+    }
+
+    .schedule{
+        position: absolute;
+        top: 100px;
+        left: 800px;
+    }
+    .schedule div{
+        position:absolute;
+    }
+
+</style>
+<body>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="">Cars</a></li>
+      <li role="presentation"><a href='/history/{{ member.0.1 }}/'>History</a></li>
+      <li role="presentation"><a href="/my_profile/{{ member.0.1 }}/">Profile</a></li>
+        <p class="navbar-text navbar-right">Signed in as <a href="/my_profile/{{ member.0.1 }}/" class="navbar-link">{{ member.0.0 }}</a></p>
+    </ul>
+    <div class="body">
+        <div class="head">
+        <h1>
+            {{ the_car.0.1 }} {{ the_car.0.2 }}
+        </h1>
+        </div>
+        <img src="{{ the_car.0.8 }}" alt={{ the_car.0.1 }} {{ the_car.0.2 }} style="width:600px;height:400px;" class="img-thumbnail">
+        <div class="info">
+        <h3>
+          Location:
+          <small class="text-muted">{{ the_location.0.1 }}</small>
+        </h3>
+
+        <h3>
+          Comments:
+          <small class="text-muted">{{ the_comment.0.4 }}</small>
+        </h3>
+
+        <h3>
+          Rating:
+          <small class="text-muted"> {{ the_comment.0.3 }}/5</small>
+        </h3>
+
+        </div>
+    </div>
+
+
+    <script>
+    $(document).ready(function() {
+        $('.datepicker').datepicker();
+    });
+    </script>
+
+    <div class="date">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="id_start_date">Start Date:</label>
+            {{ form.start_date }}
+            <br>
+            <br>
+            <label for="is_end_date">End Date:</label>
+            {{ form.end_date }}
+            <br>
+            <br>
+            <input type="submit" class="btn btn-primary" onclick="location.href=''" value="Book this car now!" />
+            <br>
+
+            {% if conflict == "Success!"%}
+            <div class="alert alert-success alert-dismissable">
+                <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>{{ conflict }}</strong>
+            </div>
+            {% endif %}
+
+            {% if conflict == "Error!"%}
+            <div class="alert alert-danger alert-dismissable">
+                <a href="" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>{{ conflict }}</strong>
+            </div>
+            {% endif %}
+
+        </form>
+    </div>
+
+    <div class="schedule">
+        <h2>Current Reservations</h2>
+        <br>
+        <div>
+        {% for reservation in the_reservations %}
+            {{ reservation.0 }} - {{ reservation.1 }}
+            <br>
+            <br>
+        {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>

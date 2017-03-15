@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+    .container{
+        position: absolute;
+        width: 35%;
+        left: 50px;
+    }
+
+    .reservations{
+        position: absolute;
+        left: 700px;
+    }
+
+    .reservations img{
+        height: 100px;
+        width: 150px;
+    }
+    .info{
+        background-color: #f5f6f7;
+        height: 100px;
+        width: 600px;
+    }
+</style>
+
+<body>
+<div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="/cars/{{ member.0.0 }}">Cars</a></li>
+  <li role="presentation"><a href='/history/{{ member.0.0 }}'>History</a></li>
+  <li role="presentation"><a href="/my_profile/{{ member.0.0 }}">Profile</a></li>
+    <p class="navbar-text navbar-right">Signed in as <a href="/my_profile/" class="navbar-link">{{ member.0.1 }}</a></p>
+</ul>
+
+<div class="container">
+    <h1>Info</h1>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>{{ member.0.1 }}</td>
+        <td><input type="submit" class="btn btn-primary" onclick="location.href=''" value="Change" /></td>
+      </tr>
+      <tr>
+          <td>Address</td>
+          <td>{{ member.0.2 }}</td>
+          <td><input type="submit" class="btn btn-primary" onclick="location.href=''" value="Change" /></td>
+      </tr>
+      <tr>
+          <td>PhoneNumber</td>
+          <td>{{ member.0.3 }}</td>
+          <td><input type="submit" class="btn btn-primary" onclick="location.href=''" value="Change" /></td>
+      </tr>
+      <tr>
+          <td>email</td>
+          <td>{{ member.0.4 }}</td>
+          <td><input type="submit" class="btn btn-primary" onclick="location.href=''" value="Change" /></td>
+      </tr>
+      <tr>
+          <td>Password</td>
+          <td>*******</td>
+          <td><input type="submit" class="btn btn-primary" onclick="location.href=''" value="Change" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h1 style="position: relative; left: 820px">Current reservations</h1>
+{% for reservation in reservations %}
+    <div class="reservations">
+        <div class="info" style="border-bottom: solid black">
+            <p><img src="{{ reservation.6 }}" align="left";>
+            <p style="position: relative; top: 4px; left: 7px">Pick Up Date: {{ reservation.3 }}</p>
+                <p style="position: relative; left: 220px; bottom: 28px">Drop Off Date: {{ reservation.4 }}</p>
+                <p style="position: relative; left: 7px; bottom: 20px">Pick Up Location: {{ reservation.5 }}</p>
+                <p style="position: relative; left: 7px; bottom: 20px">Make: {{ reservation.0 }}</p>
+                <p style="position: relative; left: 260px; bottom: 50px">Model: {{ reservation.1 }}</p>
+                <p style="position: relative; left: 400px; bottom: 80px"> Daily Rate: ${{ reservation.2 }}</p>
+            </p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+
+<style>
+.body{
+    position: absolute;
+	top: 55px;
+	left: -20px;
+	right: 0;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb0AMui2STv1TOE7YdbjCjfqK0-l4kH-8ROvpH7nNMNNlBI7pqXw);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: -1;
+}
+    h1{
+        position: relative;
+        left: 45%;
+    }
+
+    .container{
+        border-left: solid black;
+        border-right: solid black;
+
+    }
+</style>
+
+
+<body>
+    <div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Cars</a></li>
+  <li role="presentation"><a href='/history/{{ name.0.1 }}'>History</a></li>
+  <li role="presentation"><a href="/my_profile/{{ name.0.1 }}/">Profile</a></li>
+    <p class="navbar-text navbar-right">Signed in as <a href="/my_profile/" class="navbar-link">{{ name.0.0 }}</a></p>
+</ul>
+<h1>Available Cars</h1>
+<br>
+
+{% for car in all_cars%}
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+        <div class="card-outline-primary" style="width: 20rem;">
+            <img class="card-img-top" src="{{ car.8 }}" alt="{{ car.1 }} {{ car.2 }}" style=" width:300px;height:200px;">
+            <div class="card-block">
+                <h4 class="card-title">{{ car.1 }} {{ car.2 }}</h4>
+                <h5>daily fee: {{ car.4 }}</h5>
+                <a href="{{car.0}}/" class="btn btn-primary">Rent</a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+{% endfor %}
+
+
+    </div>
+    </div>
+
+</body>
+</html>
