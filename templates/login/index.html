@@ -150,6 +150,7 @@ body{
 </style>
 
 
+
 <body>
     <div class="body"></div>
         <div class="grad"></div>
@@ -161,9 +162,14 @@ body{
             <form action="/login/" method="post">
                 {% csrf_token %}
                 {{ form }}
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit"  />
+                <br>
+                <br>
+                <a href="/login/signup/">Not a member? Sign up now!</a>
             </form>
         </div>
+
+
 
 
 </body>

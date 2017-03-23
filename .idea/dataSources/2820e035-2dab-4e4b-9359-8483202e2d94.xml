@@ -128,6 +128,7 @@ date</ColNames>
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="38" parent="12" name="name">
       <Position>2</Position>
@@ -164,15 +165,15 @@ date</ColNames>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="45" parent="12" name="PRIMARY">
+    <column id="45" parent="12" name="admin">
+      <Position>9</Position>
+      <DataType>tinyint(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="46" parent="12" name="PRIMARY">
       <ColNames>memNum</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="46" parent="13" name="LocationNumber">
-      <Position>1</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
     <column id="47" parent="13" name="Address">
       <Position>2</Position>
       <DataType>varchar(250)|0</DataType>
@@ -183,84 +184,90 @@ date</ColNames>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="49" parent="13" name="PRIMARY">
-      <ColNames>LocationNumber</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="50" parent="14" name="vin">
+    <column id="49" parent="13" name="locationNumber">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="14" name="memNum">
+    <key id="50" parent="13" name="PRIMARY">
+      <ColNames>locationNumber</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="14" name="vin">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="14" name="memNum">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="14" name="pickupDate">
+    <column id="53" parent="14" name="pickupDate">
       <Position>3</Position>
       <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="14" name="pickupOdometer">
+    <column id="54" parent="14" name="pickupOdometer">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="54" parent="14" name="pickupStatus">
+    <column id="55" parent="14" name="pickupStatus">
       <Position>5</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="14" name="dropOffDate">
+    <column id="56" parent="14" name="dropOffDate">
       <Position>6</Position>
       <DataType>datetime|0</DataType>
     </column>
-    <column id="56" parent="14" name="dropOffOdometer">
+    <column id="57" parent="14" name="dropOffOdometer">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="57" parent="14" name="dropOffStatus">
+    <column id="58" parent="14" name="dropOffStatus">
       <Position>8</Position>
       <DataType>varchar(50)|0</DataType>
     </column>
-    <key id="58" parent="14" name="PRIMARY">
+    <key id="59" parent="14" name="PRIMARY">
       <ColNames>vin
 memNum
 pickupDate</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="59" parent="15" name="reservationNum">
+    <column id="60" parent="15" name="reservationNum">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="60" parent="15" name="vin">
+    <column id="61" parent="15" name="vin">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="61" parent="15" name="memNum">
+    <column id="62" parent="15" name="memNum">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="15" name="accessCode">
+    <column id="63" parent="15" name="accessCode">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="15" name="startDate">
+    <column id="64" parent="15" name="startDate">
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="15" name="endDate">
+    <column id="65" parent="15" name="endDate">
       <Position>6</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="65" parent="15" name="PRIMARY">
+    <key id="66" parent="15" name="PRIMARY">
       <ColNames>reservationNum</ColNames>
       <Primary>1</Primary>
     </key>

@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^cars/', include('cars.urls')),
     url(r'^login/', include('login.urls')),
     url(r'^my_profile/', include('my_profile.urls')),
-    url(r'^history/', include('history.urls'))
+    url(r'^history/', include('history.urls')),
+    url(r'^admin_user/', include('admin_user.urls'))
 ]
