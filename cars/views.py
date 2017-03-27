@@ -57,17 +57,14 @@ def details(request, mem_num, car_id):
             cursor.execute("SELECT * FROM reservation WHERE vin ="+ car_id)
             current_reservations = cursor.fetchall()
             # inserts reservation if there is no conflict with current reservations
-            print "overlapped"
             overlap = 0
             conflict = ""
             for reservation in current_reservations:
-                print type(reservation[5])
                 if start_date <= reservation[5] and end_date >= reservation[3]:
                     overlap = 1
                     conflict = "Error!"
 
             if len(current_reservations)==0 or overlap == 0:
-                print"here"
                 conflict = "Success!"
                 cursor.execute("INSERT INTO reservation(vin, memNum, startDate, accessCode, endDate) "+
                                 "VALUES ("+ car_id + "," + mem_num+",'" + str(start_date) + "',321,'" + str(end_date) + "')")
