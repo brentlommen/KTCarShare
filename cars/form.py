@@ -6,3 +6,7 @@ class bookingForm(forms.Form):
     start_date = forms.DateField(label="Start Date:", widget=DateInput())
 
     end_date = forms.DateField(label="End Date", widget=DateInput())
+
+
+class dateForm(forms.Form):
+    start_date = forms.DateField(label="Start Date:", widget=DateInput())

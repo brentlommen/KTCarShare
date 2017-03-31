@@ -41,8 +41,8 @@ def signUp(request):
         if form.is_valid():
             # process the data in form.cleaned_data as required
             data = form.cleaned_data
-            cursor.execute("INSERT INTO members( name, address, phoneNumber,email, licience, password) "+
-                                "VALUES ('"+ data["name"] + "','" + data["address"]+"','" + data["phoneNumber"] + "','" + data["email"] +"','" + data["licence"] + "','" + data["password"]+ "')")
+            cursor.execute("INSERT INTO members( name, address, phoneNumber,email, licience, password, anualFee) "+
+                                "VALUES ('"+ data["name"] + "','" + data["address"]+"','" + data["phoneNumber"] + "','" + data["email"] +"','" + data["licence"] + "','" + data["password"]+ "',200"+ ")")
             conn.commit()
             form = loginForm()
             return HttpResponseRedirect('/login/')

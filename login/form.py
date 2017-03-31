@@ -15,3 +15,4 @@ class signupForm(forms.Form):
     licence = forms.CharField(label="Licence Number", max_length=50)
     password = forms.CharField(label="Password", max_length=100)
 
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Damaged</title>
+</head>
+<body>
+<div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Cars</a></li>
+  <li role="presentation"><a href="/admin_user/members/">Members</a></li>
+    <li role="presentation"><a href="/admin_user/invoices">Invoices</a></li>
+</ul>
+<div class="container">
+  <h2>Damaged Vehicles</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Vin Number</th>
+          <th>Make</th>
+          <th>Model</th>
+        <th>Year</th>
+        <th>Car Status</th>
+        <th>location</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for damaged in all_damaged %}
+      <tr>
+        <td>{{ damaged.0 }}</td>
+        <td>{{ damaged.1 }}</td>
+        <td>{{ damaged.2 }}</td>
+        <td>{{ damaged.3 }}</td>
+        <td>{{ damaged.5 }}</td>
+        <td>{{ damaged.7 }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

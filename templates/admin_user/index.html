@@ -1,12 +1,90 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>KT Admin</title>
 </head>
+<style>
+.body{
+    position: absolute;
+	top: 55px;
+	left: -20px;
+	right: 0;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTb0AMui2STv1TOE7YdbjCjfqK0-l4kH-8ROvpH7nNMNNlBI7pqXw);
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: -1;
+}
+    h1{
+        position: relative;
+        left: 45%;
+    }
+
+    .container{
+        border-left: solid black;
+        border-right: solid black;
+
+    }
+    .form{
+        position: absolute;
+        bottom: 630px;
+        left: 160px
+    }
+</style>
 <body>
+<div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Cars</a></li>
+  <li role="presentation"><a href="/admin_user/members/">Members</a></li>
+    <li role="presentation"><a href="/admin_user/invoices">Invoices</a></li>
+</ul>
 
-This is the admin page
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Actions
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="/admin_user/addCar/">Add a car</a></li>
+    <li><a href="/admin_user/searchByLocation/">Search by location</a></li>
+      <li><a href="/admin_user/reservations">Search Reservations</a></li>
+    <li><a href="#">Maintenance</a></li>
+      <li><a href="/admin_user/damaged">Show Damaged Cars</a></li>
+      <li><a href="/admin_user/sort-by-rentals">Sort by Rentals</a></li>
+  </ul>
+</div>
 
+
+
+{% for car in all_cars%}
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+        <div class="card-outline-primary" style="width: 20rem;">
+            <img class="card-img-top" src="{{ car.8 }}" alt="{{ car.1 }} {{ car.2 }}" style=" width:300px;height:200px;">
+            <div class="card-block">
+                <h4 class="card-title">{{ car.1 }} {{ car.2 }}</h4>
+                <h5>daily fee: {{ car.4 }}</h5>
+                <a href="rentalHistory/{{car.0}}/" class="btn btn-primary">Rental History</a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+{% endfor %}
+
+
+    </div>
+    </div>
 </body>
 </html>

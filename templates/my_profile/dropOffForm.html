@@ -12,7 +12,69 @@
         $('.datepicker').datepicker();
     });
  </script>
+<style>
+body{
+    background: #F0F8FF;
+
+    z-index: 1;
+}
+.header{
+	position: relative;
+	top: calc(50% - 35px);
+	left: calc(50% - 160px);
+	z-index: 5;
+}
+
+.header div{
+	float: left;
+	color: #ffffff;
+	font-family: 'Exo', sans-serif;
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+    .form{
+	background:#dfbf9f; width:470px; margin:0 auto; padding-left:50px; padding-top:80px;
+}
+.form fieldset{border:0px; padding:0px; margin:0px;}
+
+.form input[type="text"] { width: 400px; }
+.form input[type="email"] { width: 400px; }
+.form input[type="password"] { width: 400px; }
+.form label { color: #000; font-weight:bold;font-size: 12px;font-family:Arial, Helvetica; }
+
+.form input, textarea { background-color: rgba(255, 255, 255, 0.4); border: 1px solid rgba(122, 192, 0, 0.15); padding: 7px; font-family: Keffeesatz, Arial; color: #4b4b4b; font-size: 14px; -webkit-border-radius: 5px; margin-bottom: 15px; margin-top: -10px; }
+.form input:focus, textarea:focus { border: 1px solid #ff5400; background-color: rgba(255, 255, 255, 1); }
+
+.form input.button{ background: #4b8df9; display: inline-block; padding: 5px 10px 6px; color: #fbf7f7; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; text-shadow: 0 -1px 1px #222; border: none; position: relative; cursor: pointer; font-size: 14px; font-family:Verdana, Geneva, sans-serif;}
+.form input.button:hover	{ background-color: #2a78f6; }
+</style>
 <body>
-{{ form }}
+<div class="header">
+    <div>DropOff - <span>Form</span></div>
+</div>
+<div  class="form">
+    		<form action="" method="post" id="contactform">
+                {% csrf_token %}
+    			<p class="contact"><label for="dropOffDate">Drop Off Date</label></p>
+                {{ form.dropOffDate }}
+    			<p class="contact"><label for="dropOffOdometer">Drop Off Odometer</label></p>
+    			{{ form.dropOffOdometer }}
+
+                <p class="contact"><label for="dropOffStatus">Drop Off Status</label></p>
+    			{{ form.dropOffStatus }}
+
+                <p class="contact"><label for="rating">Rating</label></p>
+    			{{ form.rating }}
+
+                <p class="contact"><label for="comment">Comment</label></p>
+    			{{ form.comment }}
+
+                <input class="button" name="submit" id="submit" tabindex="5" value="Submit!" type="submit">
+   </form>
+</div>
 </body>
 </html>

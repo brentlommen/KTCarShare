@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
-
+    <title>Add Car</title>
 </head>
 <style>
-
-body{
-    background: #F0F8FF;
-
-    z-index: 1;
-}
 .header{
 	position: relative;
 	top: calc(50% - 35px);
@@ -47,31 +42,42 @@ body{
 .form input.button:hover	{ background-color: #2a78f6; }
 </style>
 <body>
+<div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Cars</a></li>
+  <li role="presentation"><a href="/admin_user/members/">Members</a></li>
+    <li role="presentation"><a href="/admin_user/invoices">Invoices</a></li>
+</ul>
 <div class="header">
-    <div>Car<span>Share</span></div>
+    <div>Add A <span>Car</span></div>
 </div>
 <div  class="form">
-    		<form action="/login/signup/" method="post" id="contactform">
+    		<form action="/admin_user/addCar/" method="post" id="contactform">
                 {% csrf_token %}
-                <p class="contact"><label for="cost">Membership fee $200/month</label></p>
-    			<p class="contact"><label for="name">Name</label></p>
-                {{ form.name }}
-    			<p class="contact"><label for="email">Email</label></p>
-    			{{ form.email }}
+    			<p class="contact"><label for="vin">Vin Number:</label></p>
+                {{ form.vin }}
+    			<p class="contact"><label for="make">Make:</label></p>
+    			{{ form.make }}
 
-                <p class="contact"><label for="address">Address</label></p>
-    			{{ form.address }}
+                <p class="contact"><label for="model">Model</label></p>
+    			{{ form.model }}
 
-                <p class="contact"><label for="password">Create a password</label></p>
-    			{{ form.password }}
+                <p class="contact"><label for="year">Year</label></p>
+    			{{ form.year }}
 
-                <p class="contact"><label for="licence">Licence</label></p>
-    			{{ form.licence }}
+                <p class="contact"><label for="rentalFee">Daily Rental Fee:</label></p>
+    			{{ form.dailyRentalFee }}
 
-                <p class="contact"><label for="phone">Mobile phone</label></p>
-                {{ form.phoneNumber }}<br>
+                <p class="contact"><label for="locationNumber">Location Number:</label></p>
+                {{ form.locationNumber }}
 
-                <input class="button" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit">
+                <p class="contact"><label for="picture">Picture URL:</label></p>
+                {{ form.picture }}
+
+                <p class="contact"><label for="odometer">Odometer:</label></p>
+                {{ form.odometer }}<br>
+
+                <input class="button" name="submit" id="submit" tabindex="5" value="Add Car!" type="submit">
    </form>
 </div>
 </body>

@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <html lang="en">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Cars</title>
@@ -32,6 +35,11 @@
         border-right: solid black;
 
     }
+    .form{
+        position: absolute;
+        bottom: 630px;
+        left: 160px
+    }
 </style>
 
 
@@ -45,7 +53,20 @@
 </ul>
 <h1>Available Cars</h1>
 <br>
+    <script>
+    $(document).ready(function() {
+        $('.datepicker').datepicker();
+    });
+</script>
+<div  class="form">
+    		<form action="" method="post" id="dateForm">
+                {% csrf_token %}
+                <label for="startDate">Start Date</label>
+                {{ form.start_date }}
 
+                <input type="submit" class="btn btn-primary" onclick="location.href=''" value="Submit!" />
+   </form>
+</div>
 {% for car in all_cars%}
     <div class="container">
     <div class="row">

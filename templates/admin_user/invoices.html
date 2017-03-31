@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invoices</title>
+</head>
+<body>
+<div class="body"></div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Cars</a></li>
+  <li role="presentation"><a href="/admin_user/members/">Members</a></li>
+    <li role="presentation"><a href="/admin_user/invoices">Invoices</a></li>
+</ul>
+<script>
+    $(document).ready(function() {
+        $('.datepicker').datepicker();
+    });
+</script>
+<div class="date">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit"  />
+    </form>
+</div>
+<div class="container">
+  <h2>Invoices</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Member</th>
+        <th>Total Month Rental Fee</th>
+        <th>Monthly Membership Fee</th>
+        <th>Total Month Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for invoice in all_invoices %}
+      <tr>
+        <td>{{ invoice.0 }}</td>
+        <td>{{ invoice.1 }}</td>
+        <td>{{ invoice.2 }}</td>
+        <td>{{ invoice.3 }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

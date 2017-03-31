@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Search By Location</title>
+</head>
+<body>
+<div class="container">
+  <h2>Locations</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>location Number</th>
+          <th>Address</th>
+          <th>Selection</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    {% for location in all_locations %}
+      <tr>
+        <td>{{ location.0 }}</td>
+        <td>{{ location.1 }}</td>
+        <td><input type="submit" class="btn btn-primary" onclick="location.href='{{ location.0 }}/'" value="View Available Cars" /></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
