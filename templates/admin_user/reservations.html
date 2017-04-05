@@ -21,7 +21,7 @@
         $('.datepicker').datepicker();
     });
 </script>
-
+{% if requested.0 == 1 %}
 <div class="date">
     <form action="" method="post">
         {% csrf_token %}
@@ -29,9 +29,9 @@
         <input type="submit" value="Submit"  />
     </form>
 </div>
-
+{% endif %}
 <div class="container">
-  <h2>All Reservations on {{ date }}</h2>
+  <h2>All Reservations for {{ date }}</h2>
   <table class="table table-striped">
     <thead>
       <tr>

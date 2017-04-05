@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load staticfiles %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Maintenance Check</title>
 </head>
+<body>
 <body>
 <div class="body"></div>
 <ul class="nav nav-tabs">
@@ -13,17 +15,17 @@
   <li role="presentation"><a href="/admin_user/members/">Members</a></li>
     <li role="presentation"><a href="/admin_user/invoices">Invoices</a></li>
 </ul>
-<h1>Cars Located At {{ address.0.0 }}</h1>
-{% for car in carsAtLocation%}
+<h1>Cars that have traveled 50,000 km since last Maintenance</h1>
+{% for car in all_cars%}
     <div class="container">
     <div class="row">
     <div class="col-md-4">
         <div class="card-outline-primary" style="width: 20rem;">
-            <img class="card-img-top" src="{{ car.8 }}" alt="{{ car.1 }} {{ car.2 }}" style=" width:300px;height:200px;">
+            <img class="card-img-top" src="{{ car.3 }}" alt="{{ car.1 }} {{ car.2 }}" style=" width:300px;height:200px;">
             <div class="card-block">
                 <h4 class="card-title">{{ car.1 }} {{ car.2 }}</h4>
-                <h5>daily fee: {{ car.4 }}</h5>
-                <a href="/admin_user/searchByLocation/{{ car.0 }}/reservations" class="btn btn-primary">Reservations</a>
+                <h5>Km since maintenance: {{ car.4 }}</h5>
+                <a href="rentalHistory/{{car.0}}/" class="btn btn-primary">Rental History</a>
             </div>
             <br>
         </div>
@@ -34,6 +36,5 @@
 
     </div>
     </div>
-
 </body>
 </html>

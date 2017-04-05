@@ -6,6 +6,7 @@ import mysql.connector
 from .form import addCarForm
 from .form import reservationForm
 from .form import invoiceForm
+from .form import commentForm
 # Create your views here.
 
 def adminCars(request):
@@ -43,13 +44,33 @@ def statement(request, mem_num):
 def rentalHistory(request, car_num):
     conn = mysql.connector.connect(user='root', password='', host='localhost', database='ktcsdb')
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM rentalhistory WHERE vin = "+ car_num)
+    cursor.execute("SELECT rentalhistory.memNum, reservationNum, pickupDate, dropOffDate, pickupOdometer, dropOffOdometer, pickupStatus, dropOffStatus, rating, comment FROM rentalhistory LEFT JOIN comments ON rentalhistory.vin = comments.vin AND rentalhistory.memNum = comments.memNum AND rentalhistory.dropOffDate = comments.date WHERE rentalhistory.vin = "+ car_num)
     car_history = cursor.fetchall()
     context = {
         'car_history' : car_history
     }
     return render(request, 'admin_user/rentalHistory.html', context)
 
+def comments(request, res_num):
+    conn = mysql.connector.connect(user='root', password='', host='localhost', database='ktcsdb')
+    cursor = conn.cursor()
+    cursor.execute("SELECT rentalhistory.memNum, comments.date, rating, comment, rentalhistory.vin FROM rentalhistory LEFT JOIN comments ON rentalhistory.vin = comments.vin AND rentalhistory.memNum = comments.memNum AND rentalhistory.dropOffDate = comments.date WHERE rentalhistory.reservationNum = " + res_num)
+    all_comments = cursor.fetchall()
+    form = commentForm()
+    if request.method == 'POST':
+        form = commentForm(request.POST)
+        if form.is_valid():
+            data = form.cleaned_data
+            cursor.execute("INSERT INTO comments VALUES ('"+ str(all_comments[0][4]) + "', 0, CURDATE() , NULL,'" + data["comment"] + "','"+ str(all_comments[0][0]) + "')")
+            conn.commit()
+            return HttpResponseRedirect('/admin_user/comment/'+str(res_num)+'/')
+        else:
+            form = commentForm()
+    context = {
+    'all_comments' : all_comments,
+    'form' : form
+    }
+    return render(request, 'admin_user/viewComments.html', context)
 def addCar(request):
     conn = mysql.connector.connect(user='root', password='', host='localhost', database='ktcsdb')
     cursor = conn.cursor()
@@ -62,6 +83,8 @@ def addCar(request):
             # process the data in form.cleaned_data as
             data = form.cleaned_data
             cursor.execute("INSERT INTO cars VALUES ('"+str(data["vin"])+"','"+ data["make"]+"','"+ data["model"]+"','"+ str(data["year"])+ "','"+ str(data["dailyRentalFee"])+ "','normal',1,'"+ str(data["locationNumber"])+"','"+ data["picture"]+"','"+ str(data["odometer"])+"')")
+            conn.commit()
+            cursor.execute("INSERT INTO carmaintenance (vin, date, MTodometer, maintenanceType) VALUES ('" + str(data["vin"]) + "', CURDATE(),'"+ str(data["odometer"]) + "' , 'check')")
             conn.commit()
             return HttpResponseRedirect('/admin_user/')
 
@@ -171,3 +194,27 @@ def carsByLocation(request, location_num):
         'carsAtLocation' : carsAtLocation
     }
     return render(request, 'admin_user/carsAtLocation.html', context)
+
+def carReservations(request, car_num):
+    conn = mysql.connector.connect(user='root', password='', host='localhost', database='ktcsdb')
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM reservation WHERE vin = "+ car_num)
+    all_reservations = cursor.fetchall()
+    requested = 1
+    context = {
+        'all_reservations' : all_reservations,
+        'requested' : requested
+
+    }
+    return render(request, 'admin_user/reservations.html', context)
+
+
+def maintenanceCheck(request):
+    conn = mysql.connector.connect(user='root', password='', host='localhost', database='ktcsdb')
+    cursor = conn.cursor()
+    cursor.execute("SELECT vin, make, model, picture, kmsince FROM (SELECT vin, make, model, picture, MIN(odometer - MTodometer)as KMsince FROM cars NATURAL JOIN carmaintenance GROUP BY vin)as T1 WHERE kmsince>=5000")
+    all_cars = cursor.fetchall()
+    context = {
+        'all_cars' : all_cars
+    }
+    return render(request, 'admin_user/maintenanceCheck.html', context)

@@ -2,31 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cce60bfd-d0ef-4cc6-a15b-74cf1cedf4ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_user/form.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/addCar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/carsAtLocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/damaged.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/invoices.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/members.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/rentalHistory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/reservations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/searchByLocation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/sortByRentals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/statement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/maintenanceCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admin_user/viewComments.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/history/userComments.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/2820e035-2dab-4e4b-9359-8483202e2d94.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/2820e035-2dab-4e4b-9359-8483202e2d94.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/form.py" afterPath="$PROJECT_DIR$/admin_user/form.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/urls.py" afterPath="$PROJECT_DIR$/admin_user/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_user/views.py" afterPath="$PROJECT_DIR$/admin_user/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cars/form.py" afterPath="$PROJECT_DIR$/cars/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cars/views.py" afterPath="$PROJECT_DIR$/cars/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/form.py" afterPath="$PROJECT_DIR$/login/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_profile/form.py" afterPath="$PROJECT_DIR$/my_profile/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_profile/views.py" afterPath="$PROJECT_DIR$/my_profile/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history/urls.py" afterPath="$PROJECT_DIR$/history/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/history/views.py" afterPath="$PROJECT_DIR$/history/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin_user/carsAtLocation.html" afterPath="$PROJECT_DIR$/templates/admin_user/carsAtLocation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin_user/index.html" afterPath="$PROJECT_DIR$/templates/admin_user/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin_user/rentalHistory.html" afterPath="$PROJECT_DIR$/templates/admin_user/rentalHistory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin_user/reservations.html" afterPath="$PROJECT_DIR$/templates/admin_user/reservations.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cars/index.html" afterPath="$PROJECT_DIR$/templates/cars/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login/signup.html" afterPath="$PROJECT_DIR$/templates/login/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/my_profile/dropOffForm.html" afterPath="$PROJECT_DIR$/templates/my_profile/dropOffForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/history/index.html" afterPath="$PROJECT_DIR$/templates/history/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,20 +59,6 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="reservation" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="ktcsdb@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
         <option name="myItemId" value="rentalhistory" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -96,21 +73,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="parkinglocations" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="ktcsdb@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="members" />
+        <option name="myItemId" value="comments" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -128,126 +91,108 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ktcsdb@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="carmaintenance" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_user/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin_user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2732">
-              <caret line="172" column="69" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="69" />
+            <state relative-caret-position="-2276">
+              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1490997130754" expanded="true" signature="431:449" ph="SELECT * FRO... cars" />
-                <marker date="1490997130754" expanded="true" signature="805:842" ph="SELECT * FRO... members" />
-                <marker date="1490997130754" expanded="true" signature="1180:1325" ph="SELECT * FRO... rentalhistory" />
-                <marker date="1490997130754" expanded="true" signature="1180:1326" ph="SELECT * FRO... rentalhistory" />
-                <marker date="1490997130754" expanded="true" signature="1696:1735" ph="SELECT * FRO... rentalhistory" />
-                <marker date="1490997130754" expanded="true" signature="1696:1736" ph="SELECT * FRO... rentalhistory" />
-                <marker date="1490997130754" expanded="true" signature="2416:2441" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2453" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2464" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2484" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2505" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2531" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2576" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2578" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2613" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2636" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2665" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="2416:2713" ph="INSERT INTO cars... " />
-                <marker date="1490997130754" expanded="true" signature="3483:3514" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="3483:3515" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="3483:3527" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="3483:3528" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="3483:3568" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="3483:3592" ph="SELECT * FRO... reservation" />
-                <marker date="1490997130754" expanded="true" signature="4577:5141" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4695:4788" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4695:4942" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4695:5066" ph="SELECT memNu... memNum" />
-                <marker date="1490997130754" expanded="true" signature="4695:5091" ph="SELECT memNu... memNum" />
-                <marker date="1490997130754" expanded="true" signature="4695:5097" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4695:5134" ph="SELECT memNu... memNum" />
-                <marker date="1490997130754" expanded="true" signature="4795:4856" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4795:4861" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4795:4942" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4863:4923" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="4863:4942" ph="SELECT memNu... " />
-                <marker date="1490997130754" expanded="true" signature="5786:5861" ph="SELECT * FRO... cars" />
-                <marker date="1490997130754" expanded="true" signature="6195:6326" ph="SELECT vin, rentalhistory" />
-                <marker date="1490997130754" expanded="true" signature="6660:6690" ph="SELECT * FRO... parkinglocations" />
-                <marker date="1490997130754" expanded="true" signature="7055:7096" ph="SELECT * FRO... cars" />
-                <marker date="1490997130754" expanded="true" signature="7055:7097" ph="SELECT * FRO... cars" />
-                <marker date="1490997130754" expanded="true" signature="7174:7233" ph="SELECT Addre... parkinglocations" />
-                <marker date="1490997130754" expanded="true" signature="7174:7234" ph="SELECT Addre... parkinglocations" />
+                <marker date="1491339473067" expanded="true" signature="461:479" ph="SELECT * FRO... cars" />
+                <marker date="1491339473067" expanded="true" signature="835:872" ph="SELECT * FRO... members" />
+                <marker date="1491339473067" expanded="true" signature="1210:1355" ph="SELECT * FRO... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="1210:1356" ph="SELECT * FRO... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="1726:2063" ph="SELECT renta... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="2036:2062" ph="SELECT * FRO... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="2036:2063" ph="SELECT * FRO... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="2416:2695" ph="SELECT renta... rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="2937:2967" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:2999" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:3002" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:3021" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:3030" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:3047" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="2937:3079" ph="INSERT INTO comments... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3908" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3920" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3931" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3951" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3972" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:3998" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4043" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4045" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4080" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4103" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4132" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="3883:4392" ph="INSERT INTO cars... " />
+                <marker date="1491339473067" expanded="true" signature="4189:4266" ph="INSERT INTO carmaintenance... " />
+                <marker date="1491339473067" expanded="true" signature="4189:4304" ph="INSERT INTO carmaintenance... " />
+                <marker date="1491339473067" expanded="true" signature="4189:4343" ph="INSERT INTO carmaintenance... " />
+                <marker date="1491339473067" expanded="true" signature="4189:4344" ph="INSERT INTO carmaintenance... " />
+                <marker date="1491339473067" expanded="true" signature="4189:4346" ph="INSERT INTO carmaintenance... " />
+                <marker date="1491339473067" expanded="true" signature="5162:5193" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="5162:5194" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="5162:5206" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="5162:5207" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="5162:5247" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="5162:5271" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="6256:6820" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6374:6467" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6374:6621" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6374:6745" ph="SELECT memNu... memNum" />
+                <marker date="1491339473067" expanded="true" signature="6374:6770" ph="SELECT memNu... memNum" />
+                <marker date="1491339473067" expanded="true" signature="6374:6776" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6374:6813" ph="SELECT memNu... memNum" />
+                <marker date="1491339473067" expanded="true" signature="6474:6535" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6474:6540" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6474:6621" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6542:6602" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="6542:6621" ph="SELECT memNu... " />
+                <marker date="1491339473067" expanded="true" signature="7465:7540" ph="SELECT * FRO... cars" />
+                <marker date="1491339473067" expanded="true" signature="7874:8005" ph="SELECT vin, rentalhistory" />
+                <marker date="1491339473067" expanded="true" signature="8339:8369" ph="SELECT * FRO... parkinglocations" />
+                <marker date="1491339473067" expanded="true" signature="8734:8775" ph="SELECT * FRO... cars" />
+                <marker date="1491339473067" expanded="true" signature="8734:8776" ph="SELECT * FRO... cars" />
+                <marker date="1491339473067" expanded="true" signature="8853:8912" ph="SELECT Addre... parkinglocations" />
+                <marker date="1491339473067" expanded="true" signature="8853:8913" ph="SELECT Addre... parkinglocations" />
+                <marker date="1491339473067" expanded="true" signature="9310:9347" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="9310:9348" ph="SELECT * FRO... reservation" />
+                <marker date="1491339473067" expanded="true" signature="9767:9923" ph="SELECT vin, vin" />
+                <marker date="1491339473067" expanded="true" signature="9767:9942" ph="SELECT vin, vin" />
+                <marker date="1491339473067" expanded="true" signature="9767:9962" ph="SELECT vin, vin" />
+                <marker date="1491339473067" expanded="true" signature="9815:9923" ph="SELECT vin, cars" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carsAtLocation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin_user/carsAtLocation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="18" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchByLocation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin_user/searchByLocation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="25" column="98" lean-forward="false" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_user/form.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sortByRentals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin_user/sortByRentals.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="114" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="114" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addCar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin_user/addCar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin_user/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -255,49 +200,100 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cars/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="132">
+              <caret line="65" column="106" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="106" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cars/views.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/history/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-                <marker date="1490733611841" expanded="true" signature="388:406" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="776:868" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="776:869" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="776:915" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="776:916" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="776:946" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="1048:1095" ph="SELECT name,... members" />
-                <marker date="1490733611841" expanded="true" signature="1470:1517" ph="SELECT name,... members" />
-                <marker date="1490733611841" expanded="true" signature="1939:1970" ph="SELECT * FRO... cars" />
-                <marker date="1490733611841" expanded="true" signature="2034:2109" ph="SELECT * FRO... parkinglocations" />
-                <marker date="1490733611841" expanded="true" signature="2166:2200" ph="SELECT * FRO... comments" />
-                <marker date="1490733611841" expanded="true" signature="2273:2320" ph="SELECT name,... members" />
-                <marker date="1490733611841" expanded="true" signature="2390:2445" ph="SELECT start... reservation" />
-                <marker date="1490733611841" expanded="true" signature="2935:2972" ph="SELECT * FRO... reservation" />
-                <marker date="1490733611841" expanded="true" signature="3507:3702" ph="INSERT INTO reservation... " />
-                <marker date="1490733611841" expanded="true" signature="3767:3814" ph="SELECT odome... cars" />
-                <marker date="1490733611841" expanded="true" signature="3901:4004" ph="SELECT reser... reservation" />
-                <marker date="1490733611841" expanded="true" signature="4099:4401" ph="INSERT INTO rentalhistory... " />
-                <marker date="1490733611841" expanded="true" signature="4529:4584" ph="SELECT start... reservation" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="46" column="101" lean-forward="false" selection-start-line="46" selection-start-column="101" selection-end-line="46" selection-end-column="101" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin_user/urls.py">
+        <entry file="file://$PROJECT_DIR$/history/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="14" column="99" lean-forward="false" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
+            <state relative-caret-position="154">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <marker date="1491343114765" expanded="true" signature="71:232" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/history/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <marker date="1491343114712" expanded="true" signature="316:364" ph="SELECT name,... members" />
+                <marker date="1491343114712" expanded="true" signature="428:543" ph="SELECT vin,m... cars" />
+                <marker date="1491343114712" expanded="true" signature="613:650" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="613:651" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="613:677" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="613:678" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1135" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1136" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1162" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1164" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1189" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1216" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1217" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1232" ph="SELECT * FRO... comments" />
+                <marker date="1491343114712" expanded="true" signature="1098:1233" ph="SELECT * FRO... comments" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userComments.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/history/userComments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewComments.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/admin_user/viewComments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3728">
+              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_user/form.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addCar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin_user/addCar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1091">
+              <caret line="3" column="114" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -328,9 +324,6 @@
         <option value="$PROJECT_DIR$/login/static/login/style.css" />
         <option value="dbtable:/881c6c02/2820e035-2dab-4e4b-9359-8483202e2d94/ktcsdb.members" />
         <option value="$PROJECT_DIR$/templates/cars/bookings.html" />
-        <option value="$PROJECT_DIR$/history/urls.py" />
-        <option value="$PROJECT_DIR$/history/views.py" />
-        <option value="$PROJECT_DIR$/templates/history/index.html" />
         <option value="$PROJECT_DIR$/cars/urls.py" />
         <option value="$PROJECT_DIR$/login/urls.py" />
         <option value="$PROJECT_DIR$/templates/login/index.html" />
@@ -347,21 +340,27 @@
         <option value="$PROJECT_DIR$/templates/admin_user/statement.html" />
         <option value="$PROJECT_DIR$/templates/login/signup.html" />
         <option value="$PROJECT_DIR$/login/views.py" />
-        <option value="$PROJECT_DIR$/templates/cars/index.html" />
         <option value="$PROJECT_DIR$/login/form.py" />
-        <option value="$PROJECT_DIR$/templates/admin_user/rentalHistory.html" />
-        <option value="$PROJECT_DIR$/templates/admin_user/reservations.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/invoices.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/members.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/damaged.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/sortByRentals.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/addCar.html" />
-        <option value="$PROJECT_DIR$/templates/admin_user/index.html" />
-        <option value="$PROJECT_DIR$/admin_user/form.py" />
         <option value="$PROJECT_DIR$/templates/admin_user/searchByLocation.html" />
-        <option value="$PROJECT_DIR$/admin_user/urls.py" />
-        <option value="$PROJECT_DIR$/admin_user/views.py" />
+        <option value="$PROJECT_DIR$/templates/admin_user/index.html" />
+        <option value="$PROJECT_DIR$/templates/admin_user/maintenanceCheck.html" />
+        <option value="$PROJECT_DIR$/templates/admin_user/reservations.html" />
         <option value="$PROJECT_DIR$/templates/admin_user/carsAtLocation.html" />
+        <option value="$PROJECT_DIR$/templates/admin_user/rentalHistory.html" />
+        <option value="$PROJECT_DIR$/admin_user/urls.py" />
+        <option value="$PROJECT_DIR$/admin_user/form.py" />
+        <option value="$PROJECT_DIR$/admin_user/views.py" />
+        <option value="$PROJECT_DIR$/templates/cars/index.html" />
+        <option value="$PROJECT_DIR$/templates/history/index.html" />
+        <option value="$PROJECT_DIR$/history/urls.py" />
+        <option value="$PROJECT_DIR$/history/views.py" />
+        <option value="$PROJECT_DIR$/templates/history/userComments.html" />
+        <option value="$PROJECT_DIR$/templates/admin_user/viewComments.html" />
       </list>
     </option>
   </component>
@@ -372,9 +371,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -391,6 +391,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -414,24 +415,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KTCarShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KTCarShare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,7 +482,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
+              <option name="myItemId" value="history" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,7 +516,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -869,16 +851,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12338362" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660944" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17780173" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17703862" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28178695" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446206" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -927,9 +909,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cars/templates/cars/index.html" />
-    <entry file="file://$PROJECT_DIR$/static/login/style.css" />
-    <entry file="file://$PROJECT_DIR$/templates/static/login/style.css" />
     <entry file="file://$PROJECT_DIR$/templates/login/style.css" />
     <entry file="file://$PROJECT_DIR$/login/static/login/style.css" />
     <entry file="file://$PROJECT_DIR$/manage.py">
@@ -967,23 +946,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/history/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/history/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,18 +992,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/my_profile/pickupForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/my_profile/pickupForm.html" />
     <entry file="file://$PROJECT_DIR$/my_profile/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1056,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="69" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,33 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="49" column="62" lean-forward="true" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1490735290969" expanded="true" signature="345:382" ph="SELECT name,... members" />
-            <marker date="1490735290969" expanded="true" signature="446:616" ph="SELECT make,... reservation" />
-            <marker date="1490735290969" expanded="true" signature="446:617" ph="SELECT make,... reservation" />
-            <marker date="1490735290969" expanded="true" signature="1324:1360" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1362" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1363" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1364" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1398" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1416" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1417" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1468" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1493" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1562" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1563" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1324:1573" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1330:1348" ph="INSERT INTO members... " />
-            <marker date="1490735290969" expanded="true" signature="1628:1642" ph="SELECT vin F... rentalhistory" />
-            <marker date="1490735290969" expanded="true" signature="1628:1687" ph="SELECT vin, rentalhistory" />
-            <marker date="1490735290969" expanded="true" signature="1766:1918" ph="UPDATE renta... " />
-            <marker date="1490735290969" expanded="true" signature="1996:2054" ph="DELETE FROM " />
-            <marker date="1490735290969" expanded="true" signature="1996:2055" ph="DELETE FROM " />
-            <marker date="1490735290969" expanded="true" signature="2122:2223" ph="INSERT INTO comments... " />
-            <marker date="1490735290969" expanded="true" signature="2122:2313" ph="INSERT INTO comments... " />
-            <marker date="1490735290969" expanded="true" signature="2122:2371" ph="INSERT INTO reservati... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,9 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,9 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="73" column="31" lean-forward="false" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="73" column="103" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,15 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="47" column="8" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="47" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/history/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="114" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,15 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
           <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1490980669198" expanded="true" signature="369:417" ph="SELECT name,... members" />
-            <marker date="1490980669198" expanded="true" signature="1862:2013" ph="INSERT INTO members... " />
-            <marker date="1490980669198" expanded="true" signature="1862:2038" ph="INSERT INTO members... " />
-            <marker date="1490980669198" expanded="true" signature="1862:2068" ph="INSERT INTO members... " />
-            <marker date="1490980669198" expanded="true" signature="1862:2091" ph="INSERT INTO members... " />
-            <marker date="1490980669198" expanded="true" signature="1862:2150" ph="INSERT INTO members... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,19 +1099,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/statement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,33 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="68" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/invoices.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/rentalHistory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/reservations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="3" column="114" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="41" column="6" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,25 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="114" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/addCar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,28 +1131,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-            <marker date="1490733611841" expanded="true" signature="388:406" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="776:868" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="776:869" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="776:915" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="776:916" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="776:946" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="1048:1095" ph="SELECT name,... members" />
-            <marker date="1490733611841" expanded="true" signature="1470:1517" ph="SELECT name,... members" />
-            <marker date="1490733611841" expanded="true" signature="1939:1970" ph="SELECT * FRO... cars" />
-            <marker date="1490733611841" expanded="true" signature="2034:2109" ph="SELECT * FRO... parkinglocations" />
-            <marker date="1490733611841" expanded="true" signature="2166:2200" ph="SELECT * FRO... comments" />
-            <marker date="1490733611841" expanded="true" signature="2273:2320" ph="SELECT name,... members" />
-            <marker date="1490733611841" expanded="true" signature="2390:2445" ph="SELECT start... reservation" />
-            <marker date="1490733611841" expanded="true" signature="2935:2972" ph="SELECT * FRO... reservation" />
-            <marker date="1490733611841" expanded="true" signature="3507:3702" ph="INSERT INTO reservation... " />
-            <marker date="1490733611841" expanded="true" signature="3767:3814" ph="SELECT odome... cars" />
-            <marker date="1490733611841" expanded="true" signature="3901:4004" ph="SELECT reser... reservation" />
-            <marker date="1490733611841" expanded="true" signature="4099:4401" ph="INSERT INTO rentalhistory... " />
-            <marker date="1490733611841" expanded="true" signature="4529:4584" ph="SELECT start... reservation" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/searchByLocation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="98" lean-forward="false" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/invoices.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/maintenanceCheck.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/statement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,95 +1174,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin_user/searchByLocation.html">
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/reservations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="25" column="98" lean-forward="false" selection-start-line="25" selection-start-column="98" selection-end-line="25" selection-end-column="98" />
+        <state relative-caret-position="639">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_user/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/rentalHistory.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="99" lean-forward="false" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
+        <state relative-caret-position="315">
+          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin_user/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cars/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="-631">
+          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin_user/carsAtLocation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="169">
+          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/addCar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1091">
+          <caret line="3" column="114" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="76" lean-forward="false" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin_user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2732">
-          <caret line="172" column="69" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="69" />
+        <state relative-caret-position="-2276">
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1490997130754" expanded="true" signature="431:449" ph="SELECT * FRO... cars" />
-            <marker date="1490997130754" expanded="true" signature="805:842" ph="SELECT * FRO... members" />
-            <marker date="1490997130754" expanded="true" signature="1180:1325" ph="SELECT * FRO... rentalhistory" />
-            <marker date="1490997130754" expanded="true" signature="1180:1326" ph="SELECT * FRO... rentalhistory" />
-            <marker date="1490997130754" expanded="true" signature="1696:1735" ph="SELECT * FRO... rentalhistory" />
-            <marker date="1490997130754" expanded="true" signature="1696:1736" ph="SELECT * FRO... rentalhistory" />
-            <marker date="1490997130754" expanded="true" signature="2416:2441" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2453" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2464" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2484" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2505" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2531" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2576" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2578" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2613" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2636" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2665" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="2416:2713" ph="INSERT INTO cars... " />
-            <marker date="1490997130754" expanded="true" signature="3483:3514" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="3483:3515" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="3483:3527" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="3483:3528" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="3483:3568" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="3483:3592" ph="SELECT * FRO... reservation" />
-            <marker date="1490997130754" expanded="true" signature="4577:5141" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4695:4788" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4695:4942" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4695:5066" ph="SELECT memNu... memNum" />
-            <marker date="1490997130754" expanded="true" signature="4695:5091" ph="SELECT memNu... memNum" />
-            <marker date="1490997130754" expanded="true" signature="4695:5097" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4695:5134" ph="SELECT memNu... memNum" />
-            <marker date="1490997130754" expanded="true" signature="4795:4856" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4795:4861" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4795:4942" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4863:4923" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="4863:4942" ph="SELECT memNu... " />
-            <marker date="1490997130754" expanded="true" signature="5786:5861" ph="SELECT * FRO... cars" />
-            <marker date="1490997130754" expanded="true" signature="6195:6326" ph="SELECT vin, rentalhistory" />
-            <marker date="1490997130754" expanded="true" signature="6660:6690" ph="SELECT * FRO... parkinglocations" />
-            <marker date="1490997130754" expanded="true" signature="7055:7096" ph="SELECT * FRO... cars" />
-            <marker date="1490997130754" expanded="true" signature="7055:7097" ph="SELECT * FRO... cars" />
-            <marker date="1490997130754" expanded="true" signature="7174:7233" ph="SELECT Addre... parkinglocations" />
-            <marker date="1490997130754" expanded="true" signature="7174:7234" ph="SELECT Addre... parkinglocations" />
+            <marker date="1491339473067" expanded="true" signature="461:479" ph="SELECT * FRO... cars" />
+            <marker date="1491339473067" expanded="true" signature="835:872" ph="SELECT * FRO... members" />
+            <marker date="1491339473067" expanded="true" signature="1210:1355" ph="SELECT * FRO... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="1210:1356" ph="SELECT * FRO... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="1726:2063" ph="SELECT renta... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="2036:2062" ph="SELECT * FRO... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="2036:2063" ph="SELECT * FRO... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="2416:2695" ph="SELECT renta... rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="2937:2967" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:2999" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:3002" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:3021" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:3030" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:3047" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="2937:3079" ph="INSERT INTO comments... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3908" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3920" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3931" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3951" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3972" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:3998" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4043" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4045" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4080" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4103" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4132" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="3883:4392" ph="INSERT INTO cars... " />
+            <marker date="1491339473067" expanded="true" signature="4189:4266" ph="INSERT INTO carmaintenance... " />
+            <marker date="1491339473067" expanded="true" signature="4189:4304" ph="INSERT INTO carmaintenance... " />
+            <marker date="1491339473067" expanded="true" signature="4189:4343" ph="INSERT INTO carmaintenance... " />
+            <marker date="1491339473067" expanded="true" signature="4189:4344" ph="INSERT INTO carmaintenance... " />
+            <marker date="1491339473067" expanded="true" signature="4189:4346" ph="INSERT INTO carmaintenance... " />
+            <marker date="1491339473067" expanded="true" signature="5162:5193" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="5162:5194" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="5162:5206" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="5162:5207" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="5162:5247" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="5162:5271" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="6256:6820" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6374:6467" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6374:6621" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6374:6745" ph="SELECT memNu... memNum" />
+            <marker date="1491339473067" expanded="true" signature="6374:6770" ph="SELECT memNu... memNum" />
+            <marker date="1491339473067" expanded="true" signature="6374:6776" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6374:6813" ph="SELECT memNu... memNum" />
+            <marker date="1491339473067" expanded="true" signature="6474:6535" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6474:6540" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6474:6621" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6542:6602" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="6542:6621" ph="SELECT memNu... " />
+            <marker date="1491339473067" expanded="true" signature="7465:7540" ph="SELECT * FRO... cars" />
+            <marker date="1491339473067" expanded="true" signature="7874:8005" ph="SELECT vin, rentalhistory" />
+            <marker date="1491339473067" expanded="true" signature="8339:8369" ph="SELECT * FRO... parkinglocations" />
+            <marker date="1491339473067" expanded="true" signature="8734:8775" ph="SELECT * FRO... cars" />
+            <marker date="1491339473067" expanded="true" signature="8734:8776" ph="SELECT * FRO... cars" />
+            <marker date="1491339473067" expanded="true" signature="8853:8912" ph="SELECT Addre... parkinglocations" />
+            <marker date="1491339473067" expanded="true" signature="8853:8913" ph="SELECT Addre... parkinglocations" />
+            <marker date="1491339473067" expanded="true" signature="9310:9347" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="9310:9348" ph="SELECT * FRO... reservation" />
+            <marker date="1491339473067" expanded="true" signature="9767:9923" ph="SELECT vin, vin" />
+            <marker date="1491339473067" expanded="true" signature="9767:9942" ph="SELECT vin, vin" />
+            <marker date="1491339473067" expanded="true" signature="9767:9962" ph="SELECT vin, vin" />
+            <marker date="1491339473067" expanded="true" signature="9815:9923" ph="SELECT vin, cars" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cars/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="65" column="106" lean-forward="false" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/history/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="46" column="101" lean-forward="false" selection-start-line="46" selection-start-column="101" selection-end-line="46" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1491343114765" expanded="true" signature="71:232" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/history/userComments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1491343114712" expanded="true" signature="316:364" ph="SELECT name,... members" />
+            <marker date="1491343114712" expanded="true" signature="428:543" ph="SELECT vin,m... cars" />
+            <marker date="1491343114712" expanded="true" signature="613:650" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="613:651" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="613:677" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="613:678" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1135" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1136" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1162" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1164" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1189" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1216" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1217" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1232" ph="SELECT * FRO... comments" />
+            <marker date="1491343114712" expanded="true" signature="1098:1233" ph="SELECT * FRO... comments" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_user/viewComments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3728">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

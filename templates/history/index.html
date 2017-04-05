@@ -32,6 +32,7 @@
         <th>Pick Up Date</th>
         <th>Drop Off Date</th>
         <th>Rental Fee</th>
+          <th>comments</th>
       </tr>
     </thead>
     <tbody>
@@ -43,6 +44,7 @@
         <td>{{ rental.3 }}</td>
         <td>{{ rental.4 }}</td>
         <td>{{ rental.5 }}</td>
+        <td><input type="submit" class="btn btn-primary" onclick="location.href='comments/{{ rental.0 }}'" value="View Comments" /></td>
       </tr>
     {% endfor %}
     </tbody>

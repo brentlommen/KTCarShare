@@ -20,3 +20,6 @@ class invoiceForm(forms.Form):
 
 class locationForm(forms.Form):
     location = forms
+
+class commentForm(forms.Form):
+    comment = forms.CharField(widget=forms.Textarea(attrs={'placeholder' : 'Enter Comment'}))

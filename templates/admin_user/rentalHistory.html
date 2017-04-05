@@ -25,19 +25,27 @@
           <th>Drop Off Odometer</th>
           <th>Pick Up Status</th>
         <th>Drop Off Status</th>
+          <th>Comment</th>
       </tr>
     </thead>
     <tbody>
     {% for rental in car_history %}
       <tr>
+        <td>{{ rental.0 }}</td>
         <td>{{ rental.1 }}</td>
-        <td>{{ rental.8 }}</td>
         <td>{{ rental.2 }}</td>
-        <td>{{ rental.5 }}</td>
         <td>{{ rental.3 }}</td>
-        <td>{{ rental.6 }}</td>
-      <td>{{ rental.4 }}</td>
+        <td>{{ rental.4 }}</td>
+        <td>{{ rental.5 }}</td>
+      <td>{{ rental.6 }}</td>
       <td>{{ rental.7 }}</td>
+      {% if rental.9 == NULL %}
+      <td>No Comment</td>
+          {% else %}
+            <td><a href="/admin_user/comment/{{ rental.1 }}" class="btn btn-primary">View Comment</a></td>
+      {% endif %}
+
+
       </tr>
     {% endfor %}
     </tbody>
